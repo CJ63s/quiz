@@ -1,0 +1,87 @@
+*{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+   
+}
+
+body{
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #C14600;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.parent{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 600px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #FF9D23;
+    text-align: justify;
+    
+}
+
+div{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #E5D0AC;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button{
+    width: 80%;
+    padding: 10px;
+    background-color: #FF9D23;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #FEF9E1;
+    color:black;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+}

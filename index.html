@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index-quiz.css">
+</head>
+<body>
+    <h1>History Quiz</h1>
+   <div class="parent">
+        <div>
+            <p>Question 1: What is the capital of France?</p>
+
+            
+            <input type="radio" name="q1" onclick="checkAnswer(1, 'A')" >A. London <br>
+            <input type="radio" name="q1" onclick="checkAnswer(1, 'B')" >B. Paris <br>
+            <input type="radio" name="q1" onclick="checkAnswer(1, 'C')" >C. Rome <br>
+            <input type="radio" name="q1" onclick="checkAnswer(1, 'C')" >D. NewYork <br>
+        </div>
+    
+        <div>
+            <p>Question 2: What year did World War II end?</p>
+            <input type="radio" name="q2" onclick="checkAnswer(2, 'A')" >A. 1940 <br>
+            <input type="radio" name="q2" onclick="checkAnswer(2, 'B')" >B. 1943 <br>
+            <input type="radio" name="q2" onclick="checkAnswer(2, 'C')" >C. 1945 <br>
+            <input type="radio" name="q2" onclick="checkAnswer(2, 'D')" >D. 1950 <br>
+        </div>
+    
+        <div>
+            <p>Question 3: Which ancient civilization built the pyramids?</p>
+            <input type="radio" name="q3" onclick="checkAnswer(3, 'A')" >A. Greeks <br>
+            <input type="radio" name="q3" onclick="checkAnswer(3, 'B')" >B. Romans <br>
+            <input type="radio" name="q3" onclick="checkAnswer(3, 'C')" >C. Egyptians <br>
+            <input type="radio" name="q3" onclick="checkAnswer(3, 'D')" >D. Mesopotamians <br>
+        </div>
+    
+        <div>
+            <p>Question 4: What was the name of the ship that brought <br> the Pilgrims to America in 1620?</p>
+            <input type="radio" name="q4" onclick="checkAnswer(4, 'A')" >A. The Santa Maria <br>
+            <input type="radio" name="q4" onclick="checkAnswer(4, 'B')" >B. The Mayflower <br>
+            <input type="radio" name="q4" onclick="checkAnswer(4, 'C')" >C. The Titanic <br>
+            <input type="radio" name="q4" onclick="checkAnswer(4, 'D')" >D. The Beagle <br>
+        </div>
+    
+        <div>
+            <p>Question 5: Who was the British Prime Minister during most of World War II?</p>
+            <input type="radio" name="q5" onclick="checkAnswer(5, 'A')" >A. Neville Chamberlain <br>
+            <input type="radio" name="q5" onclick="checkAnswer(5, 'B')" >B. Winston Churchill <br>
+            <input type="radio" name="q5" onclick="checkAnswer(5, 'C')" >C. Margaret Thatcher <br>
+            <input type="radio" name="q5" onclick="checkAnswer(5, 'D')" >D. Tony Blair <br>
+        </div>
+    
+        <div>
+            <p>Question 6: Which empire was known as "The Holy Roman Empire"?</p>
+            <input type="radio" name="q6" onclick="checkAnswer(6, 'A')" >A. Byzantine Empire<br>
+            <input type="radio" name="q6" onclick="checkAnswer(6, 'B')" >B. Ottoman Empire <br>
+            <input type="radio" name="q6" onclick="checkAnswer(6, 'C')" >C. Germanic Empire <br>
+            <input type="radio" name="q6" onclick="checkAnswer(6, 'D')" >D. Frankish Empire <br>
+        </div>
+    
+        <div>
+            <p>Question 7: Which event marked the beginning of the French Revolution?</p>
+            <input type="radio" name="q7" onclick="checkAnswer(7, 'A')" >A. The signing of the Declaration of Independence <br>
+            <input type="radio" name="q7" onclick="checkAnswer(7, 'B')" >B. The storming of the Bastille <br>
+            <input type="radio" name="q7" onclick="checkAnswer(7, 'C')" >C. The execution of Louis XVI <br>
+            <input type="radio" name="q7" onclick="checkAnswer(7, 'D')" >D. The Battle of Waterloo <br>
+        </div>
+    
+        <div>
+            <p>Question 8: Which country was the first to land a human on the Moon?</p>
+            <input type="radio" name="q5" onclick="checkAnswer(8, 'A')" >A. Soviet Union<br>
+            <input type="radio" name="q8" onclick="checkAnswer(8, 'B')" >B. United States <br>
+            <input type="radio" name="q8" onclick="checkAnswer(8, 'C')" >C. China <br>
+            <input type="radio" name="q8" onclick="checkAnswer(8, 'D')" >D. United Kingdom <br>
+        </div>
+    
+        <div>
+            <p>Question 9: Which of the following is an example of a simile?</p>
+            <input type="radio" name="q9" onclick="checkAnswer(9, 'A')" >A. The stars danced in the night sky <br>
+            <input type="radio" name="q9" onclick="checkAnswer(9, 'B')" >B. She was as brave as a lion <br>
+            <input type="radio" name="q9" onclick="checkAnswer(9, 'C')" >C. The wind howled through the trees <br>
+            <input type="radio" name="q9" onclick="checkAnswer(9, 'D')" >D. His heart is a stone.<br>
+        </div>
+        
+        <div>
+            <p>Question 10:  Who was the first President of the United States?</p>
+            <input type="radio" name="q10" onclick="checkAnswer(10, 'A')" >A. Thomas Jefferson <br>
+            <input type="radio" name="q10" onclick="checkAnswer(10, 'B')" >B. George Washington <br>
+            <input type="radio" name="q10" onclick="checkAnswer(10, 'C')" >C Abraham Lincoln <br>
+            <input type="radio" name="q10" onclick="checkAnswer(10, 'D')" >D. John Adams <br>
+        </div>
+
+        <div class="btn">
+            <button onclick="showScore()">Submit</button>
+            <div id="answer"></div>
+        </div>
+   </div>
+    <script src="index-quiz.js"></script>
+</body>
+</html>
